@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jasam Miah - Web Developer & CS Student Portfolio">
+    <meta name="keywords" content="web developer, frontend developer, portfolio, Jasam Miah">
+    <meta name="author" content="Jasam Miah">
+    <meta property="og:title" content="Jasam Miah | Web Developer & CS Student">
+    <meta property="og:description" content="Aspiring Web Developer & CS Student passionate about creating beautiful digital experiences.">
+    <meta property="og:type" content="website">
+    <title>Jasam Miah | Web Developer & CS Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="preloader-logo">welcome jasam PORTFOLIO</div>
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scrollProgress"></div>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
+<!-- CONFETTI -->
+<canvas id="confettiCanvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"><span class="logo-text">JM</span></div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#" class="btn btn-primary resume-nav-btn" id="resumeNavBtn">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-circle pulse"></i> FRONT DEVOLOPER
+            </div>
+            <h1 class="hero-title">Hi! I'm <span class="gradient-text">Jasam Miah</span></h1>
+            <h2 class="hero-subtitle">
+                <span id="dynamic-role"></span><span class="cursor-blink">|</span>
+            </h2>
+            <p class="hero-description">
+                Aspiring Web Developer & Computer Science Student passionate about creating
+                beautiful, functional, and user-centered digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span><i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary" id="hireBtn">
+                    <span>Hire Me </span><i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/jasam" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Jasamiqubal" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:jasamiqubal@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/jasam.Iqubal" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/jasam_iqubal_hamadan/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-wrapper">
+                <div class="image-backdrop"></div>
+                <img src="jasammmmmmm.jpeg" alt="Jasam Miah" class="profile-img">
+                <div class="image-decoration"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section" data-aos="fade-up">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon"><i class="fas fa-code"></i></div>
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">Group Work</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Get To Know Me</span>
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <p class="section-subtitle">My journey in web development and beyond</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Hello! I'm Jasam Miah</h3>
+                <p>I'm a passionate web developer and computer science student with a keen eye for creating beautiful, functional, and user-centered digital experiences.</p>
+                <p>I specialize in frontend development with expertise in HTML, CSS, JavaScript, and modern design tools. I love turning complex problems into simple, beautiful designs.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies or enjoying a good cup of coffee while reading tech blogs.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div><h4>Education</h4><p>Computer Science Student</p></div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><h4>Location</h4><p>Sylhet,Moulvibazar,Bangladesh</p></div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><h4>Email</h4><p><a href="mailto:jasamiqubal@gmail.com">jasamiqubal@gmail.com</a></p></div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary" style="margin-top:15px;">
+                    <span>Let's Work Together</span><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="about-timeline" data-aos="fade-left">
+                <h3>My Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - Present</span>
+                            <h4>Web Developer</h4>
+                            <p>Building custom websites and web applications for my team</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h4>Computer Science Student</h4>
+                            <p>Moulvibazar polytechnic institute</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022</span>
+                            <h4>Started Web Development Journey</h4>
+                            <p>Began through HTML, CSS, and JavaScript through online courses</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021</span>
+                            <h4>First Line of Code</h4>
+                            <p>Wrote my first "Hello World" program and fell in love with coding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">What I Do Best</span>
+            <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid-5">
+            <div class="skill-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+                <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-card tilt-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3</h3>
+                <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-card tilt-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="skill-icon ps-icon">Ps</div>
+                <h3>Photoshop</h3>
+                <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                <h3>Graphic Design</h3>
+                <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                <span class="skill-percentage">82%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">My Work</span>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Some of my recent work and case studies</p>
+        </div>
+        <div class="project-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="design">UI/UX</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card tilt-card" data-category="design frontend" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="image copy.png" alt="Team Blog">
+                    <div class="project-overlay">
+                        <a href="https://team-hexa-blog-website.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">UI/UX</span><span class="tag">CSS</span><span class="tag">Auth</span></div>
+                    <h3>Modern Login System</h3>
+                    <p>A sleek, secure authentication interface with smooth animations.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card tilt-card" data-category="web frontend" data-aos="fade-up" data-aos-delay="150">
+                <div class="project-image">
+                    <img src="port.png" alt="Personal Portfolio">
+                    <div class="project-overlay">
+                        <a href="https://jasam-com.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    <h3>Personal Portfolio</h3>
+                    <p>A modern, responsive portfolio website showcasing my journey, projects, and skills.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card tilt-card" data-category="web frontend" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="web.png" alt="Web Dev Practice Platform">
+                    <div class="project-overlay">
+                        <a href="https://undefined71-com.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">API</span></div>
+                    <h3>Web Dev Practice Platform</h3>
+                    <p>An interactive code editor with live preview and AI chatbot assistance.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card tilt-card" data-category="design frontend" data-aos="fade-up" data-aos-delay="250">
+                <div class="project-image">
+                    <img src="log.png" alt="Modern Login System">
+                    <div class="project-overlay">
+                        <a href="https://undefined-web-com.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">UI/UX</span><span class="tag">CSS</span><span class="tag">Auth</span></div>
+                    <h3>Modern Login System</h3>
+                    <p>A sleek, secure authentication interface with smooth animations.</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card tilt-card" data-category="web design" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="blog.png" alt="Travel Blog">
+                    <div class="project-overlay">
+                        <a href="https://blogingwebsite55.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Blog</span></div>
+                    <h3>Travel Blog</h3>
+                    <p>A responsive travel blog platform with stunning visuals and dark mode.</p>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card tilt-card" data-category="web design" data-aos="fade-up" data-aos-delay="350">
+                <div class="project-image">
+                    <img src="vari.png" alt="Verification Login">
+                    <div class="project-overlay">
+                        <a href="https://portfolio-jasam-com.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Blog</span></div>
+                    <h3>Verification LOG IN System</h3>
+                    <p>A responsive verification login system platform with stunning visuals and dark mode.</p>
+                </div>
+            </div>
+
+        </div><!-- /.projects-grid -->
+
+        <div class="projects-cta" data-aos="fade-up">
+            <p>Want to see more of my work?</p>
+            <a href="https://github.com/jasam" target="_blank" class="btn btn-primary">
+                <span>Visit My GitHub</span><i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Client Feedback</span>
+            <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+            <p class="section-subtitle">Testimonials from clients and colleagues</p>
+        </div>
+        <div class="testimonials-slider" data-aos="fade-up">
+            <div class="testimonial-card active">
+                <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"great semester final project"</p>
+                <div class="testimonial-author">
+                    <div class="author-info"><h4>teacher</h4><span>dep:cst</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"not yet"</p>
+                <div class="testimonial-author">
+                    <div class="author-info"><h4>n..</h4><span>..</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"Jnot yet"</p>
+                <div class="testimonial-author">
+                    <div class="author-info"><h4>E...</h4><span>n...</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button class="testimonial-btn prev" id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button class="testimonial-btn next" id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- AI CHATBOT SECTION -->
+<section class="chatbot-section" data-aos="fade-up">
+    <div class="container">
+        <div class="chatbot-card">
+            <div class="chatbot-header">
+                <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
+                <div>
+                    <h3>Ask About Me</h3>
+                    <p>Chat with jasam AI assistant to learn more about my work and skills</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="openChatbot">
+                <span>Start Conversation</span><i class="fas fa-comments"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT WIDGET -->
+<div class="chatbot-widget" id="chatbotWidget">
+    <div class="chatbot-widget-header">
+        <div class="chatbot-widget-title">
+            <i class="fas fa-robot"></i>
+            <div>
+                <span style="display:block;font-weight:600;">Jasam's AI Assistant</span>
+                <span style="font-size:11px;color:#4ade80;">● Online</span>
+            </div>
+        </div>
+        <button class="chatbot-close" id="closeChatbot"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chatbot-message bot">
+            <div class="message-avatar"><i class="fas fa-robot"></i></div>
+            <div class="message-content">
+                <p>👋 Hi! I'm Jasam's AI assistant. Ask me anything about his skills, projects, or experience!</p>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot-suggestions">
+        <button class="suggestion-btn">🚀 Skills</button>
+        <button class="suggestion-btn">💼 Projects</button>
+        <button class="suggestion-btn">📞 Contact</button>
+        <button class="suggestion-btn">💰 Hire him</button>
+    </div>
+    <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Ask me anything..." class="chatbot-input">
+        <button id="sendChatMessage" class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            <p class="section-subtitle">Have a project in mind? Let's make it happen!</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out. I'm always open to discussing new projects and opportunities.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text"><h4>Email</h4><a href="mailto:jasamiqubal@gmail.com">jasamiqubal@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text"><h4>Location</h4><p>Dhaka, Bangladesh</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text"><h4>Availability</h4><p>Open for freelance projects</p></div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/jasam" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Jasamiqubal" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jasam_iqubal_hamadan/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/jasam.Iqubal" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" data-aos="fade-left">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span>Send Message</span><i class="fas fa-paper-plane"></i>
+                </button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Jasam Miah</h3>
+                <p>Web Developer & CS Student</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="social-links">
+                    <a href="https://github.com/jasam" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Jasamiqubal
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jasam Miah. All rights reserved.</p>
+            
+        </div>
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+<!-- CHATBOT FAB -->
+<button class="chatbot-fab" id="chatbotFab">
+    <i class="fas fa-robot"></i>
+    <span class="fab-badge"></span>
+</button>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/8801784076660" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+</a>
+
+<!-- RESUME MODAL -->
+<div id="resumeModal" class="resume-modal">
+    <div class="resume-modal-box">
+        <div class="resume-modal-header">
+            <h3><i class="fas fa-file-alt"></i> My Resume</h3>
+            <button class="resume-modal-close" id="resumeModalClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="resume-modal-body">
+            <img src="resume.jpeg" alt="Jasam Miah Resume"
+                 onerror="this.src='https://placehold.co/700x990/141414/FF6B35?text=Add+resume.jpeg'">
+        </div>
+        <div class="resume-modal-footer">
+            <a href="resume.jpeg" download="Jasam_Miah_Resume.jpeg" class="resume-download-btn">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
