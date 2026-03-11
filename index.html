@@ -110,29 +110,6 @@
     </div>
 </section>
 
-<!-- STATS -->
-<section class="stats-section" data-aos="fade-up">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="stat-icon"><i class="fas fa-code"></i></div>
-                <div class="stat-number" data-target="15">0</div>
-                <div class="stat-label">Projects Completed</div>
-            </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="stat-icon"><i class="fas fa-users"></i></div>
-                <div class="stat-number" data-target="4">0</div>
-                <div class="stat-label">Group Work</div>
-            </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                <div class="stat-icon"><i class="fas fa-star"></i></div>
-                <div class="stat-number" data-target="2">0</div>
-                <div class="stat-label">Years Experience</div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ABOUT -->
 <section class="about-section" id="about">
     <div class="container">
@@ -264,8 +241,6 @@
             <button class="filter-btn" data-filter="frontend">Frontend</button>
         </div>
         <div class="projects-grid">
-
-            <!-- Project 1 -->
             <div class="project-card tilt-card" data-category="design frontend" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-image">
                     <img src="image copy.png" alt="Team Blog">
@@ -280,8 +255,6 @@
                     <p style="color: rgb(255, 153, 0);">A sleek, secure authentication interface with smooth animations.</p>
                 </div>
             </div>
-
-            <!-- Project 2 -->
             <div class="project-card tilt-card" data-category="web frontend" data-aos="fade-up" data-aos-delay="150">
                 <div class="project-image">
                     <img src="port.png" alt="Personal Portfolio">
@@ -296,8 +269,6 @@
                     <p style="color: rgb(255, 153, 0);">A modern, responsive portfolio website showcasing my journey, projects, and skills.</p>
                 </div>
             </div>
-
-            <!-- Project 3 -->
             <div class="project-card tilt-card" data-category="web frontend" data-aos="fade-up" data-aos-delay="200">
                 <div class="project-image">
                     <img src="web.png" alt="Web Dev Practice Platform">
@@ -312,8 +283,6 @@
                     <p style="color: aqua;">An interactive code editor with live preview and AI chatbot assistance.</p>
                 </div>
             </div>
-
-            <!-- Project 4 -->
             <div class="project-card tilt-card" data-category="design frontend" data-aos="fade-up" data-aos-delay="250">
                 <div class="project-image">
                     <img src="log.png" alt="Modern Login System">
@@ -328,8 +297,6 @@
                     <p style="color: aqua;">A sleek, secure authentication interface with smooth animations.</p>
                 </div>
             </div>
-
-            <!-- Project 5 -->
             <div class="project-card tilt-card" data-category="web design" data-aos="fade-up" data-aos-delay="300">
                 <div class="project-image">
                     <img src="blog.png" alt="Travel Blog">
@@ -344,8 +311,6 @@
                     <p style="color: rgb(255, 153, 0);">A responsive travel blog platform with stunning visuals and dark mode.</p>
                 </div>
             </div>
-
-            <!-- Project 6 -->
             <div class="project-card tilt-card" data-category="web design" data-aos="fade-up" data-aos-delay="350">
                 <div class="project-image">
                     <img src="vari.png" alt="Verification Login">
@@ -360,14 +325,218 @@
                     <p style="color: rgb(255, 153, 0); font: bold;">A responsive verification login system platform with stunning visuals and dark mode.</p>
                 </div>
             </div>
-
-        </div><!-- /.projects-grid -->
-
+        </div>
         <div class="projects-cta" data-aos="fade-up">
             <p>Want to see more of my work?</p>
             <a href="https://github.com/jasam" target="_blank" class="btn btn-primary">
                 <span>Visit My GitHub</span><i class="fab fa-github"></i>
             </a>
+        </div>
+    </div>
+</section>
+
+<!-- AI CHATBOT SECTION -->
+<section class="chatbot-section" data-aos="fade-up">
+    <div class="container">
+        <div class="chatbot-card">
+            <div class="chatbot-header">
+                <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
+                <div>
+                    <h3 style="color: deepskyblue;">Ask jasam AI</h3>
+                    <p style="color: rgb(255, 255, 255);">Chat with jasam AI assistant to learn more about my work and skills</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="openChatbot">
+                <span>Start Conversation</span><i class="fas fa-comments"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT WIDGET -->
+<div class="chatbot-widget" id="chatbotWidget">
+    <div class="chatbot-widget-header">
+        <div class="chatbot-widget-title">
+            <i class="fas fa-robot"></i>
+            <div>
+                <span style="display:block;font-weight:600;">Jasam's AI Assistant</span>
+                <span style="font-size:11px;color:#4ade80;">● Online</span>
+            </div>
+        </div>
+        <button class="chatbot-close" id="closeChatbot"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chatbot-message bot">
+            <div class="message-avatar"><i class="fas fa-robot"></i></div>
+            <div class="message-content">
+                <p>👋 Hi! I'm Jasam's AI assistant. Ask me anything about his skills, projects, or experience!</p>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot-suggestions">
+        <button class="suggestion-btn">🚀 Skills</button>
+        <button class="suggestion-btn">💼 Projects</button>
+        <button class="suggestion-btn">📞 Contact</button>
+        <button class="suggestion-btn">💰 Hire him</button>
+    </div>
+    <div class="chatbot-input-area">
+        <input type="text" id="chatbotInput" placeholder="Ask me anything..." class="chatbot-input">
+        <button id="sendChatMessage" class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<!-- STATS -->
+<section class="stats-section" data-aos="fade-up">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon"><i class="fas fa-code"></i></div>
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label" style="color: rgb(255, 196, 0);">Projects Completed</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label" style="color: rgb(255, 196, 0);">Group Work</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-label" style="color: rgb(255, 196, 0);">Years Experience</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag" style="color: rgb(226, 18, 18);">Get In Touch</span>
+            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            <p class="section-subtitle">Have a project in mind? Let's make it happen!</p>
+        </div>
+
+        <div class="contact-content">
+
+            <!-- LEFT INFO PANEL -->
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out. I'm always open to discussing new projects and opportunities.</p>
+
+                <div class="availability-badge">
+                    <span class="avail-dot"></span>
+                    <span class="avail-text">Available for Freelance Work</span>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:jasamiqubal@gmail.com">jasamiqubal@gmail.com</a>
+                        </div>
+                        <span class="contact-item-action"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Moulvibazar, Sylhet, Bangladesh</p>
+                        </div>
+                        <span class="contact-item-action"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text">
+                            <h4>Availability</h4>
+                            <p>Open for freelance projects</p>
+                        </div>
+                        <span class="contact-item-action"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="response-strip">
+                    <i class="fas fa-bolt"></i>
+                    <span>Usually responds within <strong>24 hours</strong></span>
+                </div>
+
+                <div class="contact-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/jasamiqubal-js" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="social-tooltip">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                        <a href="https://x.com/Jasamiqubal" target="_blank" class="social-link" title="Twitter/X">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                        <a href="https://www.instagram.com/jasam_iqubal_hamadan/" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-tooltip">Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/jasam.Iqubal" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-tooltip">Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <form class="contact-form" id="contactForm" data-aos="fade-left">
+                <span class="scan-line-inner"></span>
+
+                <div class="form-header-inner">
+                    <div class="form-header-dot"></div>
+                    <div class="form-header-dot"></div>
+                    <div class="form-header-dot"></div>
+                    <span class="form-header-label">new_message.send()</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-at input-icon"></i>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-tag input-icon"></i>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <div class="input-wrapper textarea-wrapper">
+                        <i class="fas fa-comment-dots input-icon"></i>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fas fa-paper-plane btn-icon"></i>
+                    <span class="btn-shimmer"></span>
+                </button>
+
+                <div id="formMessage" class="form-message"></div>
+            </form>
+
         </div>
     </div>
 </section>
@@ -411,119 +580,6 @@
     </div>
 </section>
 
-<!-- AI CHATBOT SECTION -->
-<section class="chatbot-section" data-aos="fade-up">
-    <div class="container">
-        <div class="chatbot-card">
-            <div class="chatbot-header">
-                <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
-                <div>
-                    <h3>Ask About Me</h3>
-                    <p>Chat with jasam AI assistant to learn more about my work and skills</p>
-                </div>
-            </div>
-            <button class="btn btn-primary" id="openChatbot">
-                <span>Start Conversation</span><i class="fas fa-comments"></i>
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- CHATBOT WIDGET -->
-<div class="chatbot-widget" id="chatbotWidget">
-    <div class="chatbot-widget-header">
-        <div class="chatbot-widget-title">
-            <i class="fas fa-robot"></i>
-            <div>
-                <span style="display:block;font-weight:600;">Jasam's AI Assistant</span>
-                <span style="font-size:11px;color:#4ade80;">● Online</span>
-            </div>
-        </div>
-        <button class="chatbot-close" id="closeChatbot"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="chatbot-messages" id="chatbotMessages">
-        <div class="chatbot-message bot">
-            <div class="message-avatar"><i class="fas fa-robot"></i></div>
-            <div class="message-content">
-                <p>👋 Hi! I'm Jasam's AI assistant. Ask me anything about his skills, projects, or experience!</p>
-            </div>
-        </div>
-    </div>
-    <div class="chatbot-suggestions">
-        <button class="suggestion-btn">🚀 Skills</button>
-        <button class="suggestion-btn">💼 Projects</button>
-        <button class="suggestion-btn">📞 Contact</button>
-        <button class="suggestion-btn">💰 Hire him</button>
-    </div>
-    <div class="chatbot-input-area">
-        <input type="text" id="chatbotInput" placeholder="Ask me anything..." class="chatbot-input">
-        <button id="sendChatMessage" class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
-    </div>
-</div>
-
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <span class="section-tag">Get In Touch</span>
-            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
-            <p class="section-subtitle">Have a project in mind? Let's make it happen!</p>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info" data-aos="fade-right">
-                <h3>Contact Information</h3>
-                <p>Feel free to reach out. I'm always open to discussing new projects and opportunities.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-text"><h4>Email</h4><a href="mailto:jasamiqubal@gmail.com">jasamiqubal@gmail.com</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="contact-text"><h4>Location</h4><p>Moulvibazar, sylhet,Bangladesh</p></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                        <div class="contact-text"><h4>Availability</h4><p>Open for freelance projects</p></div>
-                    </div>
-                </div>
-                <div class="contact-social">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/jasamiqubal-js" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/Jasamiqubal" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/jasam_iqubal_hamadan/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/jasam.Iqubal" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-            <form class="contact-form" id="contactForm" data-aos="fade-left">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-submit">
-                    <span>Send Message</span><i class="fas fa-paper-plane"></i>
-                </button>
-                <div id="formMessage" class="form-message"></div>
-            </form>
-        </div>
-    </div>
-</section>
-
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
@@ -544,13 +600,12 @@
                 <div class="social-links">
                     <a href="https://github.com/jasamiqubal-js" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/jasam-iqubal/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/Jasamiqubal
+                    <a href="https://x.com/Jasamiqubal" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Jasam Miah. All rights reserved.</p>
-            
         </div>
     </div>
 </footer>
